@@ -8,7 +8,7 @@ public class Affichage {
     private static final String GRAS = "\u001B[1m";
     private static final String FOND_VERT = "\u001B[42m";
     private static final String FOND_JAUNE = "\u001B[43m";
-    private static final String TEXTE_NOIR = "\u001B[30m";
+    private static final String TEXTE_ROUGE = "\u001B[31m";
 
 
     public Affichage (){
@@ -84,11 +84,11 @@ public class Affichage {
         }
 
         else if (lettresVertes.contains(Character.toString(lettre))){
-            System.out.print(" " + GRAS + FOND_VERT + TEXTE_NOIR + " " + Character.toUpperCase(lettre) + " " + RESET + " ");
+            System.out.print(" " + GRAS + FOND_VERT + TEXTE_ROUGE + " " + Character.toUpperCase(lettre) + " " + RESET + " ");
         }
 
         else if (lettresJaunes.contains(Character.toString(lettre))){
-            System.out.print(" " + GRAS + FOND_JAUNE + TEXTE_NOIR + " " + Character.toUpperCase(lettre) + " " + RESET + " ");
+            System.out.print(" " + GRAS + FOND_JAUNE + TEXTE_ROUGE + " " + Character.toUpperCase(lettre) + " " + RESET + " ");
         }
 
         else {
@@ -104,11 +104,11 @@ public class Affichage {
         for (int i = 0; i < Word.NB_LETTRES_MAX; i++){
 
             if (resultat[i].trim().equals("OK")){
-                motTableau += "[" + GRAS + FOND_VERT + TEXTE_NOIR + " " + Character.toUpperCase(essai.charAt(i)) + " " + RESET + "] ";
+                motTableau += "[" + GRAS + FOND_VERT + TEXTE_ROUGE + " " + Character.toUpperCase(essai.charAt(i)) + " " + RESET + "] ";
             }
 
             else if (resultat[i].trim().equals("PRESENT")){
-                motTableau += "[" + GRAS + FOND_JAUNE + TEXTE_NOIR + " " + Character.toUpperCase(essai.charAt(i)) + " " + RESET + "] ";
+                motTableau += "[" + GRAS + FOND_JAUNE + TEXTE_ROUGE + " " + Character.toUpperCase(essai.charAt(i)) + " " + RESET + "] ";
             }
 
             else {
