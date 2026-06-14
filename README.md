@@ -67,3 +67,9 @@ Le programme permet de :
 ## Remarque
 
 Le programme doit être lancé depuis le dossier principal du projet afin que les chemins vers `data/mots.json` et `jar/wordset.jar` fonctionnent correctement.
+
+## Télécharcher le dossier
+
+```bash
+git clone https://github.com/abassekaderbhai-dev/FindMyWord.git
+```
